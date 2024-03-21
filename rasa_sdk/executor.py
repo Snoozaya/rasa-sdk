@@ -344,7 +344,7 @@ class ActionExecutor:
     def _create_api_response(
         events: List[Dict[Text, Any]], messages: List[Dict[Text, Any]], sentiments: List[str]
     ) -> Dict[Text, Any]:
-        return {"events": events, "responses": messages, "sentiments": [sentiments]}
+        return {"events": events, "responses": messages, "sentiments": sentiments}
 
     @staticmethod
     def validate_events(events: List[Dict[Text, Any]], action_name: Text):

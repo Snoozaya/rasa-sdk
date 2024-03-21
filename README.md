@@ -6,6 +6,18 @@
 
 Python SDK for the development of custom actions for Rasa.
 
+💡 **What's different on this branch?** 💡
+
+You can specify sentiments for utterances in the domain file. 
+A list of sentiments will be returned with the response. JSON key "sentiments".
+```JSON
+{
+  "recipient_id": "",
+  "responses": ["Hello there!", "What's your name?"],
+  "sentiments": ["GREET", "ASK"]
+}
+```
+
 <hr />
 
 💡 **We're migrating issues to Jira** 💡
